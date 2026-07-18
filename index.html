@@ -115,6 +115,7 @@
       padding: 1.75rem 0;
       border-top: 1px solid var(--hairline);
     }
+    .project:first-child { border-top: none; padding-top: 0.5rem; }
     .project:last-child { border-bottom: 1px solid var(--hairline); }
  
     .project-title {
@@ -173,12 +174,12 @@
       color: var(--ink);
       text-decoration: none;
       font-weight: 500;
-      border-bottom: 1px solid var(--hairline);
+      border-bottom: 1px solid transparent;
       padding-bottom: 2px;
       transition: border-color 0.18s ease, color 0.18s ease;
     }
     .contact-list a:hover { color: var(--accent); border-bottom-color: var(--accent); }
- 
+
     footer {
       margin-top: 4rem;
       padding-top: 1.75rem;
