@@ -1,3 +1,5 @@
+<img src="IMG_5649.JPG" alt="Keiren Brandt-Sawdy" width="180" style="border-radius: 50%;">
+
 ## About
 
 *Data scientist with a first career as a professional classical musician, drawn to the field by a love of breaking a large problem into parts and finding the insight that drives a decision. 
