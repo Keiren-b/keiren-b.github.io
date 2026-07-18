@@ -15,6 +15,8 @@ Features moving-average overlays on price and demand charts, plus a live feed fr
 
 *Python · pandas · Streamlit · AEMO API*
 
+---
+
 ### Executive Strategy Deck — [Project Name]
 A board-level presentation translating [problem] into [recommendation] for
 a non-technical executive audience.
