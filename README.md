@@ -28,4 +28,4 @@ a non-technical executive audience.
 [Two or three sentences: what work you're drawn to, what you're looking for.]
 
 ## Contact
-[LinkedIn] · [email] · [GitHub]
+[www.linkedin.com/in/keiren-brandt-sawdy-90779bb0] · [keiren.james18@gmail.com] · [GitHub]
