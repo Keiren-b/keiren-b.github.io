@@ -1,3 +1,5 @@
+## About
+
 *Data scientist with a first career as a professional classical musician, drawn to the field by a love of breaking a large problem into parts and finding the insight that drives a decision. 
 Backed a deliberate career change with self-taught coding and postgraduate study at Deakin, and now works across Python, R, SQL and Power BI. 
 Experienced across the government sector, with an interest in energy markets and the renewable transition.*
@@ -25,9 +27,8 @@ a non-technical executive audience.
 
 *Communication · data storytelling · executive framing*
 
-## About
-
-[Two or three sentences: what work you're drawn to, what you're looking for.]
 
 ## Contact
-www.linkedin.com/in/keiren-brandt-sawdy-90779bb0 · keiren.james18@gmail.com · keiren-b.github.io
+[www.linkedin.com/in/keiren-brandt-sawdy-90779bb0]
+[keiren.james18@gmail.com]
+[keiren-b.github.io]
