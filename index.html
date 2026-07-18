@@ -102,18 +102,12 @@
       text-transform: uppercase;
       letter-spacing: 0.16em;
       color: var(--accent);
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
       margin-bottom: 1.75rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;   /* so the border only spans the label width */
     }
-    .eyebrow::after {
-      content: "";
-      flex: 1;
-      height: 1px;
-      background: var(--hairline);
-    }
- 
+     
     section { margin-bottom: 3.75rem; }
  
     /* ---------- Projects ---------- */
@@ -222,7 +216,7 @@
           <span class="sep">/</span> Python · R · SQL · Power BI
         </p>
       </div>
-      <img class="photo" src="assets/headshot.jpg" alt="Portrait of Keiren Brandt-Sawdy" />
+      <img class="photo" src="IMG_5649JPG" alt="Portrait of Keiren Brandt-Sawdy" />
     </header>
  
     <!-- ===================== INTRO ===================== -->
