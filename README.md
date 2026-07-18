@@ -6,15 +6,14 @@ Experienced across the government sector, with an interest in energy markets and
 ## Projects
 
 ### NEM Electricity Price & Demand Dashboard
-Analysed two years of AEMO wholesale electricity data to reveal price
-volatility patterns across the National Electricity Market. Built a Python
-ingestion-and-cleaning pipeline feeding both a Power BI report and a live
-Streamlit app.
+A Streamlit dashboard exploring two years of AEMO wholesale electricity prices and demand, powered by a Python ingestion-and-cleaning pipeline. 
+Features moving-average overlays on price and demand charts, plus a live feed from AEMO's public API for current market conditions.
+
 
 - **Live app:** [aemo-nem-app.streamlit.app](https://aemo-nem-app.streamlit.app)
 - **Code & write-up:** [github.com/yourusername/aemo-nem-dashboard](https://github.com/yourusername/aemo-nem-dashboard)
 
-*Python · pandas · Power BI · Streamlit · AEMO API*
+*Python · pandas · Streamlit · AEMO API*
 
 ### Executive Strategy Deck — [Project Name]
 A board-level presentation translating [problem] into [recommendation] for
