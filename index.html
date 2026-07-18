@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Keiren Brandt-Sawdy — Data Scientist</title>
+  <meta name="description" content="Data scientist working across Python, R, SQL and Power BI. Government sector experience, with an interest in energy markets and the renewable transition." />
+ 
+  <!-- Fonts: Fraunces (editorial serif, used with restraint) + Inter (clean body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+ 
+  <style>
+    :root {
+      --paper:      #fcfcfa;
+      --ink:        #1b1b18;
+      --muted:      #6c6c63;
+      --faint:      #9a9a90;
+      --accent:     #1f4a3d;   /* deep pine — a quiet nod to the energy/renewables interest */
+      --accent-dk:  #15342a;
+      --hairline:   #e7e6df;
+      --tag-bg:     #f3f3ee;
+      --serif: "Fraunces", Georgia, "Times New Roman", serif;
+      --sans:  "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+ 
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+ 
+    html { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+ 
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 17px;
+      line-height: 1.72;
+      letter-spacing: -0.005em;
+    }
+ 
+    .wrap {
+      max-width: 840px;
+      margin: 0 auto;
+      padding: clamp(3rem, 8vw, 6rem) clamp(1.4rem, 5vw, 2.5rem) 5rem;
+    }
+ 
+    /* ---------- Header: name left, photo right ---------- */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2.5rem;
+      padding-bottom: 2.75rem;
+      margin-bottom: 2.75rem;
+      border-bottom: 1px solid var(--hairline);
+    }
+    .header-text { flex: 1; min-width: 0; }
+ 
+    .name {
+      font-family: var(--serif);
+      font-weight: 500;
+      font-size: clamp(2.1rem, 6vw, 3rem);
+      line-height: 1.02;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.7rem;
+    }
+ 
+    .role {
+      font-size: 1rem;
+      color: var(--muted);
+      font-weight: 500;
+      letter-spacing: 0.005em;
+    }
+    .role .sep { color: var(--faint); margin: 0 0.5rem; }
+ 
+    .photo {
+      flex-shrink: 0;
+      width: 132px;
+      height: 132px;
+      border-radius: 50%;
+      object-fit: cover;
+      background: var(--tag-bg);           /* neutral circle if image is missing */
+      box-shadow: 0 1px 0 var(--hairline), 0 10px 28px -12px rgba(20,40,32,0.35);
+      outline: 3px solid #fff;
+      outline-offset: -3px;
+    }
+ 
+    /* ---------- Intro ---------- */
+    .intro {
+      font-size: 1.12rem;
+      line-height: 1.72;
+      max-width: 62ch;
+      margin-bottom: 3.5rem;
+      color: #34342e;
+    }
+ 
+    /* ---------- Section scaffolding ---------- */
+    .eyebrow {
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.75rem;
+    }
+    .eyebrow::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: var(--hairline);
+    }
+ 
+    section { margin-bottom: 3.75rem; }
+ 
+    /* ---------- Projects ---------- */
+    .project {
+      padding: 1.75rem 0;
+      border-top: 1px solid var(--hairline);
+    }
+    .project:last-child { border-bottom: 1px solid var(--hairline); }
+ 
+    .project-title {
+      font-family: var(--serif);
+      font-weight: 600;
+      font-size: 1.32rem;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.55rem;
+      line-height: 1.25;
+    }
+    .project-desc {
+      color: #3a3a33;
+      max-width: 64ch;
+      margin-bottom: 1.1rem;
+    }
+ 
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-bottom: 1.1rem;
+    }
+    .tag {
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--muted);
+      background: var(--tag-bg);
+      border: 1px solid var(--hairline);
+      padding: 0.2rem 0.6rem;
+      border-radius: 100px;
+      letter-spacing: 0.01em;
+    }
+ 
+    .links { display: flex; flex-wrap: wrap; gap: 1.5rem; }
+    .links a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.94rem;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.18s ease, color 0.18s ease;
+    }
+    .links a::after { content: " \2197"; font-weight: 400; color: var(--faint); }
+    .links a:hover { color: var(--accent-dk); border-bottom-color: var(--accent); }
+ 
+    /* ---------- About / contact ---------- */
+    .about p { max-width: 62ch; color: #34342e; }
+ 
+    .contact-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.75rem;
+      list-style: none;
+    }
+    .contact-list a {
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px solid var(--hairline);
+      padding-bottom: 2px;
+      transition: border-color 0.18s ease, color 0.18s ease;
+    }
+    .contact-list a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+ 
+    footer {
+      margin-top: 4rem;
+      padding-top: 1.75rem;
+      border-top: 1px solid var(--hairline);
+      font-size: 0.82rem;
+      color: var(--faint);
+    }
+ 
+    /* ---------- Responsive ---------- */
+    @media (max-width: 620px) {
+      body { font-size: 16px; }
+      .header {
+        flex-direction: column-reverse;   /* photo sits above the name on mobile */
+        align-items: flex-start;
+        gap: 1.5rem;
+      }
+      .photo { width: 96px; height: 96px; }
+      .links { gap: 1rem 1.25rem; }
+    }
+ 
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+ 
+    <!-- ===================== HEADER ===================== -->
+    <header class="header">
+      <div class="header-text">
+        <h1 class="name">Keiren Brandt-Sawdy</h1>
+        <p class="role">
+          Data Scientist
+          <span class="sep">/</span> Python · R · SQL · Power BI
+        </p>
+      </div>
+      <img class="photo" src="assets/headshot.jpg" alt="Portrait of Keiren Brandt-Sawdy" />
+    </header>
+ 
+    <!-- ===================== INTRO ===================== -->
+    <p class="intro">
+      Data scientist with a first career as a professional classical musician, drawn to the
+      field by a love of breaking large problems into parts and finding the insight that
+      drives a decision. I backed a deliberate career change with self-taught coding and
+      postgraduate study at Deakin, and now work across Python, R, SQL, and Power BI. My
+      experience spans the government sector, with a particular interest in energy markets
+      and the renewable transition.
+    </p>
+ 
+    <!-- ===================== PROJECTS ===================== -->
+    <section>
+      <div class="eyebrow">Selected work</div>
+ 
+      <div class="project">
+        <h2 class="project-title">NEM Electricity Price &amp; Demand Dashboard</h2>
+        <p class="project-desc">
+          A Streamlit dashboard analysing two years of AEMO wholesale electricity data across
+          the National Electricity Market. A Python pipeline handles ingestion and cleaning,
+          feeding interactive price and demand charts with moving-average overlays. The app
+          also pulls live price data directly from AEMO's public API, so the dashboard reflects
+          current market conditions alongside the historical trends.
+        </p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">pandas</span>
+          <span class="tag">Streamlit</span>
+          <span class="tag">AEMO API</span>
+          <span class="tag">Time-series analysis</span>
+        </div>
+        <div class="links">
+          <!-- REPLACE with your live Streamlit URL -->
+          <a href="https://aemo-nem-app.streamlit.app">Live app</a>
+          <!-- REPLACE with your repo URL -->
+          <a href="https://github.com/keiren-b/aemo-nem-dashboard">Code &amp; write-up</a>
+        </div>
+      </div>
+ 
+      <div class="project">
+        <h2 class="project-title">Executive Strategy Deck</h2>
+        <p class="project-desc">
+          A board-level presentation translating a complex analytical problem into a clear
+          recommendation for a non-technical executive audience — built around framing,
+          data storytelling, and the single decision the work was meant to inform.
+        </p>
+        <div class="tags">
+          <span class="tag">Data storytelling</span>
+          <span class="tag">Executive communication</span>
+          <span class="tag">Strategy</span>
+        </div>
+        <div class="links">
+          <!-- REPLACE with your hosted deck (PDF / Slides) link -->
+          <a href="#">View deck</a>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- ===================== CONTACT ===================== -->
+    <section>
+      <div class="eyebrow">Contact</div>
+      <ul class="contact-list">
+        <!-- REPLACE each href -->
+        <li><a href="keiren.james18@gmail.com">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/keiren-brandt-sawdy-90779bb0/">LinkedIn</a></li>
+        <li><a href="keiren-b.github.io">GitHub</a></li>
+      </ul>
+    </section>
+ 
+    <footer>
+      © 2026 Keiren Brandt-Sawdy · Built with plain HTML on GitHub Pages
+    </footer>
+ 
+  </main>
+</body>
+</html>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
