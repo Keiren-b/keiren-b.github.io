@@ -30,5 +30,8 @@ a non-technical executive audience.
 
 ## Contact
 [www.linkedin.com/in/keiren-brandt-sawdy-90779bb0]
+
 [keiren.james18@gmail.com]
+
 [keiren-b.github.io]
+
