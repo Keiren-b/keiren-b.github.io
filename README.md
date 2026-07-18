@@ -1,6 +1,7 @@
-# Keiren Brandt-Sawdy
+*Data scientist with a first career as a professional classical musician, drawn to the field by a love of breaking a large problem into parts and finding the insight that drives a decision. 
+Backed a deliberate career change with self-taught coding and postgraduate study at Deakin, and now works across Python, R, SQL and Power BI. 
+Experienced across the government sector, with an interest in energy markets and the renewable transition.*
 
-Data analyst focused on energy markets. Python, SQL, Power BI. Based in Sydney.
 
 ## Projects
 
